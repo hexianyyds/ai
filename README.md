@@ -6,7 +6,7 @@
   <img src="https://img.shields.io/badge/%E6%94%B6%E5%BD%95%E7%AB%99%E7%82%B9-3%20%E4%B8%AA-blue" alt="收录站点">
   <img src="https://img.shields.io/badge/%E5%9C%A8%E7%BA%BF-3%2F3-brightgreen" alt="在线">
   <img src="https://img.shields.io/badge/%E9%A6%96%E6%97%A5%E5%8F%AF%E5%BE%97-%E6%9C%80%E9%AB%98%20%24175-success" alt="首日可得">
-  <img src="https://img.shields.io/badge/%E6%95%B0%E6%8D%AE%E6%9B%B4%E6%96%B0-2026--09--01%2001.56%20UTC-informational" alt="数据更新">
+  <img src="https://img.shields.io/badge/%E6%95%B0%E6%8D%AE%E6%9B%B4%E6%96%B0-2026--09--01%2001.53%20UTC-informational" alt="数据更新">
 </p>
 
 <p align="center">
@@ -25,7 +25,7 @@
 | **JustDoWork** | 🟢 在线 | **≈$92** | 注册 $70 + 首签 ≈$22 | ≈$22/天 | Anthropic + OpenAI | 需登录查看 | [点此注册 →](https://api.justwoker.icu/register?aff=dpBa) |
 | **TaBiAI** | 🟢 在线 | **$120** | 注册 $100 + 本页邀请 $20 | 支持签到 | Anthropic + OpenAI | 4 个可查 | [点此注册 →](https://tabitoken.com/sign-up?aff=vO0r) |
 
-> 「首日可得」= 注册基础额度 + 本页邀请链接额度 + 当天能领的签到额度（每日重置额度池的站点按一天的池子算）；模型、价格、在线状态由脚本抓取站点公开接口自动生成，最后更新：`2026-09-01 01:56 UTC`。
+> 「首日可得」= 注册基础额度 + 本页邀请链接额度 + 当天能领的签到额度（每日重置额度池的站点按一天的池子算）；模型、价格、在线状态由脚本抓取站点公开接口自动生成，最后更新：`2026-09-01 01:53 UTC`。
 >
 > 3 个站全注册一遍，第一天手上大约有 **$387** 额度可用。
 
@@ -74,7 +74,7 @@ powershell -ExecutionPolicy Bypass -File scripts/quickstart.ps1
 - 面板版本：`init-20260828-37a398bd`
 - 邀请他人可得：**$50**
 - 登录方式：GitHub / LinuxDO
-- 接口延迟：308 ms
+- 接口延迟：250 ms
 
 **镜像 / 备用入口**
 
@@ -214,7 +214,7 @@ curl -s https://agentrouter.org/v1/chat/completions \
 - 开放注册：✅
 - 登录方式：GitHub / 账号密码
 - GitHub 账号需满 **365 天**
-- 接口延迟：429 ms
+- 接口延迟：17413 ms
 
 > 该站模型清单需登录后台查看，注册后在「模型价格」页确认。
 
@@ -319,12 +319,13 @@ curl -s https://api.justwoker.icu/v1/chat/completions \
 
 **实时数据**（自动抓取站点公开接口）
 
+- ℹ️ 本次自动探测被站点 WAF 拦下（GitHub Actions 机房 IP 常见，家宽访问不受影响），状态与下列信息沿用 `2026-08-31 22:52 UTC` 的成功快照
 - 站点名称：**TaBiAI**
 - 面板版本：`init-20260817-f880a343`
 - 每日签到：✅
 - 开放注册：❌
 - 登录方式：GitHub / 账号密码
-- 接口延迟：224 ms
+- 接口延迟：289 ms
 
 **当前可用模型**
 
@@ -472,7 +473,7 @@ npm run check     # 校验链接是否还活着
 
 发现好用的公益站 / 中转站？两种方式：
 
-- 提 [Issue](https://github.com/2221136/ai/issues/new?template=new-site.yml) 填个表单，我来收录
+- 提 [Issue](https://github.com/hexianyyds/ai/issues/new?template=new-site.yml) 填个表单，我来收录
 - 或者直接 PR：往 `data/sites.json` 加一条，跑 `npm run refresh && npm run build` 后提交
 
 收录标准：**能免费拿到额度**、注册流程不套娃、站点公开接口可探测。

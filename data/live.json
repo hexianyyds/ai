@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-01T01:56:59.505Z",
+  "generatedAt": "2026-09-01T01:53:49.669Z",
   "sites": [
     {
       "id": "agentrouter",
-      "checkedAt": "2026-09-01T01:56:53.218Z",
+      "checkedAt": "2026-08-31T22:52:29.179Z",
       "online": true,
-      "latencyMs": 308,
+      "latencyMs": 250,
       "error": "invalid json",
       "systemName": "Agent Router",
       "version": "init-20260828-37a398bd",
@@ -147,7 +147,7 @@
       "signup": {
         "status": 200,
         "ok": true,
-        "ms": 1375,
+        "ms": 1146,
         "attempts": 1
       },
       "mirrors": [
@@ -177,9 +177,9 @@
     },
     {
       "id": "justdowork",
-      "checkedAt": "2026-09-01T01:56:47.241Z",
+      "checkedAt": "2026-09-01T01:53:30.361Z",
       "online": true,
-      "latencyMs": 429,
+      "latencyMs": 17413,
       "error": null,
       "systemName": "JustDoWork",
       "version": "v1.0.0-rc.23",
@@ -205,7 +205,7 @@
       "signup": {
         "status": 200,
         "ok": true,
-        "ms": 652,
+        "ms": 2177,
         "attempts": 1
       },
       "mirrors": [],
@@ -219,11 +219,11 @@
     },
     {
       "id": "tabitoken",
-      "checkedAt": "2026-09-01T01:56:49.038Z",
-      "apiOk": true,
-      "pricingOk": true,
-      "latencyMs": 224,
-      "error": null,
+      "checkedAt": "2026-09-01T01:53:18.990Z",
+      "apiOk": false,
+      "pricingOk": false,
+      "latencyMs": 289,
+      "error": "HTTP 403",
       "systemName": "TaBiAI",
       "version": "init-20260817-f880a343",
       "registerOpen": false,
@@ -265,8 +265,8 @@
           "inputPerMTok": null,
           "outputPerMTok": null,
           "groups": [
-            "default",
-            "vip"
+            "vip",
+            "default"
           ],
           "protocols": [
             "anthropic",
@@ -306,7 +306,7 @@
           ]
         }
       ],
-      "modelsSource": "public-api",
+      "modelsSource": "cached",
       "defaults": {
         "claude": "claude-opus-5",
         "openai": "claude-opus-5"
@@ -314,15 +314,25 @@
       "signup": {
         "status": 403,
         "ok": false,
-        "ms": 506,
+        "ms": 1688,
         "attempts": 1
       },
       "mirrors": [],
-      "probeBlocked": false,
+      "probeBlocked": true,
       "online": true,
-      "dataStale": false,
-      "staleFrom": null,
-      "staleFields": []
+      "dataStale": true,
+      "staleFrom": "2026-08-31T22:52:25.505Z",
+      "staleFields": [
+        "systemName",
+        "version",
+        "registerOpen",
+        "passwordRegister",
+        "checkinEnabled",
+        "loginMethods",
+        "quotaPerUnit",
+        "models",
+        "defaults"
+      ]
     }
   ]
 }
