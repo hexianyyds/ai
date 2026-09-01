@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Coding 福利站导航 — 免费额度 · 白嫖 Claude Code / Codex / Cursor 的中转与公益站合集</title>
+<meta name="description" content="免费额度 · 白嫖 Claude Code / Codex / Cursor 的中转与公益站合集。当前收录 6 个站点，6 个在线，单站首日最高可得 $175 免费额度，按美元计价的站全部注册约 $507；Matrix 另发 600 积分。">
+<meta name="keywords" content="Claude Code 免费,Claude Code 中转,Codex 中转,Codex 公益站,AI API 中转站,公益站,免费 API 额度,每日免费额度,claude-opus-5 API,New API,AgentRouter,RawChat,Matrix 统一网关,TaBiAI,GoRouter,claude-opus-5 按次计费">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AI Coding 福利站导航">
+<meta property="og:description" content="免费额度 · 白嫖 Claude Code / Codex / Cursor 的中转与公益站合集。当前收录 6 个站点，6 个在线，单站首日最高可得 $175 免费额度，按美元计价的站全部注册约 $507；Matrix 另发 600 积分。">
+<meta property="og:url" content="https://ai.shunyuan.me/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://ai.shunyuan.me/">
+<style>
+/* AI Coding 福利站导航 — 落地页样式（手写，非生成物） */
+:root {
+  --bg: #0a0c11;
+  --bg-soft: #11141c;
+  --card: #151924;
+  --line: #232838;
+  --fg: #e8ecf6;
+  --fg-dim: #98a1b8;
+  --accent: #7c5cff;
+  --accent-2: #22d3ee;
+  --ok: #34d399;
+  --bad: #f87171;
+  --radius: 14px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(900px 500px at 15% -10%, rgba(124, 92, 255, 0.22), transparent 60%),
+    radial-gradient(800px 460px at 95% 0%, rgba(34, 211, 238, 0.16), transparent 55%),
+    var(--bg);
+  color: var(--fg);
+  font: 16px/1.7 ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+
+/* ---------- hero ---------- */
+header.hero { padding: 84px 0 56px; text-align: center; }
+.hero h1 {
+  margin: 0 0 14px;
+  font-size: clamp(30px, 5.6vw, 52px);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  background: linear-gradient(96deg, #fff 20%, var(--accent-2) 55%, var(--accent) 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.hero p.sub { margin: 0 auto 26px; max-width: 620px; color: var(--fg-dim); font-size: clamp(15px, 2vw, 18px); }
+
+.pills { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 30px; }
+.pill {
+  padding: 6px 13px; border: 1px solid var(--line); border-radius: 999px;
+  background: rgba(255, 255, 255, 0.03); color: var(--fg-dim); font-size: 13px;
+}
+.pill b { color: var(--fg); }
+
+.cta-row { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 13px 24px; border-radius: 12px; text-decoration: none;
+  font-weight: 650; font-size: 15px; transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.btn-primary {
+  color: #0a0c11; background: linear-gradient(96deg, var(--accent-2), var(--accent));
+  box-shadow: 0 8px 26px rgba(124, 92, 255, 0.32);
+}
+.btn-ghost { color: var(--fg); border: 1px solid var(--line); background: var(--bg-soft); }
+.btn:hover { transform: translateY(-2px); }
+
+/* ---------- sections ---------- */
+section { padding: 44px 0; }
+h2 { font-size: clamp(21px, 3vw, 28px); margin: 0 0 6px; letter-spacing: -0.01em; }
+h2 + .hint { margin: 0 0 26px; color: var(--fg-dim); font-size: 14px; }
+
+.grid { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+
+.card {
+  border: 1px solid var(--line); border-radius: var(--radius); background: var(--card);
+  padding: 22px; display: flex; flex-direction: column; gap: 14px;
+}
+.card.featured { border-color: rgba(124, 92, 255, 0.55); box-shadow: 0 0 0 1px rgba(124, 92, 255, 0.18) inset; }
+.card h3 { margin: 0; font-size: 20px; display: flex; align-items: center; gap: 9px; flex-wrap: wrap; }
+.card .desc { margin: 0; color: var(--fg-dim); font-size: 14px; }
+
+.dot { width: 9px; height: 9px; border-radius: 50%; flex: none; }
+.dot.up { background: var(--ok); box-shadow: 0 0 0 4px rgba(52, 211, 153, 0.16); }
+.dot.down { background: var(--bad); box-shadow: 0 0 0 4px rgba(248, 113, 113, 0.16); }
+
+.tag { font-size: 12px; padding: 3px 9px; border-radius: 6px; background: rgba(124, 92, 255, 0.14); color: #c4b5fd; }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; }
+
+.kv { display: grid; grid-template-columns: auto 1fr; gap: 6px 14px; font-size: 14px; margin: 0; }
+.kv dt { color: var(--fg-dim); }
+.kv dd { margin: 0; }
+.kv dd b { color: var(--ok); }
+/* 额度构成写在首日额度后面，压暗一档，别抢主数字的视觉 */
+.kv dd small { color: var(--fg-dim); font-size: 12px; display: block; }
+
+ul.hl, ol.hl { margin: 0; padding-left: 18px; font-size: 14px; color: var(--fg-dim); }
+ul.hl li, ol.hl li { margin-bottom: 5px; }
+ul.hl li::marker, ol.hl li::marker { color: var(--accent); }
+
+pre {
+  margin: 0; padding: 14px 16px; overflow-x: auto; font-size: 13px; line-height: 1.65;
+  background: #0c0e15; border: 1px solid var(--line); border-radius: 10px;
+  font-family: ui-monospace, SFMono-Regular, "Cascadia Code", Consolas, monospace;
+}
+pre code { color: #cbd5e1; }
+.copy {
+  align-self: flex-start; margin-top: 8px; padding: 5px 11px; font-size: 12px; cursor: pointer;
+  color: var(--fg-dim); background: transparent; border: 1px solid var(--line); border-radius: 7px;
+}
+.copy:hover { color: var(--fg); border-color: var(--accent); }
+
+details { border: 1px solid var(--line); border-radius: 10px; background: var(--bg-soft); padding: 14px 16px; margin-bottom: 10px; }
+details summary { cursor: pointer; font-weight: 600; }
+details p { color: var(--fg-dim); margin: 10px 0 0; font-size: 14px; }
+
+.table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); }
+table { width: 100%; border-collapse: collapse; font-size: 13px; min-width: 560px; }
+table th, table td { padding: 8px 10px; border-bottom: 1px solid var(--line); text-align: left; }
+table th { color: var(--fg-dim); font-weight: 600; }
+table code { color: var(--accent-2); }
+
+footer { padding: 40px 0 64px; border-top: 1px solid var(--line); color: var(--fg-dim); font-size: 13px; }
+footer ul { padding-left: 18px; }
+footer a { color: var(--accent-2); }
+
+.mt-auto { margin-top: auto; }
+@media (max-width: 640px) { header.hero { padding: 56px 0 36px; } .card { padding: 18px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <h1>AI Coding 福利站导航</h1>
+    <p class="sub">免费额度 · 白嫖 Claude Code / Codex / Cursor 的中转与公益站合集</p>
+    <div class="pills">
+      <span class="pill">收录 <b>6</b> 站</span>
+      <span class="pill">在线 <b>6/6</b></span>
+      <span class="pill">首日最高 <b>$175</b></span>
+      <span class="pill">美元站全注册约 <b>$507</b></span>
+      <span class="pill">数据更新 <b>2026-08-31 22:52 UTC</b></span>
+    </div>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="https://agentrouter.org/register?aff=szt3" target="_blank" rel="noopener">立即免费注册 AgentRouter →</a>
+      <a class="btn btn-ghost" href="https://github.com/panxunying/ai-coding-welfare" target="_blank" rel="noopener">GitHub 仓库 ⭐</a>
+    </div>
+  </header>
+
+  <section id="sites">
+    <h2>站点一览</h2>
+    <p class="hint">额度、模型、在线状态由脚本定时抓取站点公开接口自动更新。</p>
+    <p class="hint">Matrix 另发 600 积分——站内积分与美元没有公开换算关系，未计入上面的美元合计。</p>
+    <div class="grid">
+      <article class="card featured">
+        <h3><span class="dot up" title="在线"></span>AgentRouter<span class="tag">首推</span></h3>
+        <p class="desc">AI Coding 公益站 · 注册即送额度，签到每日续命</p>
+        <div class="tags"><span class="tag">公益站</span><span class="tag">免费额度</span><span class="tag">Claude Code</span><span class="tag">Codex</span><span class="tag">Anthropic 兼容</span></div>
+        <dl class="kv"><dt>首日可得</dt><dd><b>$175</b><small> 注册 $100 + 本页邀请 $50 + 首签 $25</small></dd><dt>之后每天</dt><dd>签到 $25</dd><dt>邀请他人</dt><dd>$50</dd><dt>登录方式</dt><dd>GitHub / LinuxDO</dd><dt>可用模型</dt><dd>claude-opus-4-8、claude-opus-5、deepseek-v4-flash、glm-5.3、gpt-5.6-sol</dd><dt>接口延迟</dt><dd>250 ms</dd></dl>
+        <ul class="hl"><li>注册即送 $100，从本页邀请链接进入再多 $50，不需要充值、不需要信用卡</li><li>每日签到再领 $25，首日合计最高 $175，长期白嫖不断供</li><li>同时提供 Anthropic 与 OpenAI 两种兼容协议，Claude Code / Codex / Cline / Cursor 都能直连</li></ul>
+        <pre><code>export ANTHROPIC_BASE_URL=https://agentrouter.org
+export ANTHROPIC_AUTH_TOKEN=你的 API Key
+export ANTHROPIC_MODEL=claude-opus-5
+claude</code></pre>
+        <button class="copy" type="button">复制配置</button>
+        <div class="mt-auto"></div>
+        <a class="btn btn-primary" href="https://agentrouter.org/register?aff=szt3" target="_blank" rel="noopener">免费注册 AgentRouter →</a>
+        <a class="btn btn-ghost" href="https://ps.air-outer.com/register?aff=szt3" target="_blank" rel="noopener">大陆备用域名</a>
+      </article>
+      <article class="card">
+        <h3><span class="dot up" title="在线"></span>JustDoWork</h3>
+        <p class="desc">New API 中转站 · GitHub 一键登录，支持签到与绘图</p>
+        <div class="tags"><span class="tag">New API</span><span class="tag">免费额度</span><span class="tag">签到</span><span class="tag">绘图</span><span class="tag">OpenAI 兼容</span></div>
+        <dl class="kv"><dt>首日可得</dt><dd><b>≈$92</b><small> 注册 $70 + 首签 ≈$22</small></dd><dt>之后每天</dt><dd>签到 ≈$22</dd><dt>登录方式</dt><dd>GitHub / 账号密码</dd><dt>账号门槛</dt><dd>GitHub 满 365 天</dd><dt>可用模型</dt><dd>登录后台查看</dd><dt>接口延迟</dt><dd>504 ms</dd></dl>
+        <ul class="hl"><li>注册即得约 $70 额度，GitHub 一键登录，不用充值</li><li>基于开源 New API 面板，控制台熟悉、日志与用量一目了然</li><li>每日签到再领约 $22，首日合计约 $92</li></ul>
+        <pre><code>export ANTHROPIC_BASE_URL=https://api.justwoker.icu
+export ANTHROPIC_AUTH_TOKEN=你的 API Key
+export ANTHROPIC_MODEL=在站内模型列表中选择
+claude</code></pre>
+        <button class="copy" type="button">复制配置</button>
+        <div class="mt-auto"></div>
+        <a class="btn btn-primary" href="https://api.justwoker.icu/sign-up?aff=VTrz" target="_blank" rel="noopener">免费注册 JustDoWork →</a>
+        
+      </article>
+      <article class="card">
+        <h3><span class="dot up" title="在线"></span>RawChat 公益站</h3>
+        <p class="desc">Codex 公益站 · 每日 $50 额度池，0 点自动重置</p>
+        <div class="tags"><span class="tag">公益站</span><span class="tag">Codex</span><span class="tag">每日重置</span><span class="tag">免费额度</span></div>
+        <dl class="kv"><dt>首日可得</dt><dd><b>$50</b></dd><dt>之后每天</dt><dd>重置额度池 $50（不累积）</dd><dt>已开放服务</dt><dd>Codex</dd><dt>登录方式</dt><dd>邮箱</dd><dt>可用模型</dt><dd>登录后台查看</dd><dt>接口延迟</dt><dd>9 ms</dd><dt>数据快照</dt><dd>2026-08-30 10:21 UTC（本次探测被站点 WAF 拦下，机房 IP 常见，不影响家宽访问）</dd></dl>
+        <ul class="hl"><li>每日 $50 额度池，每天 0 点自动重置，不用签到、不用充值</li><li>专供 Codex：后台「使用教程」直接复制一键安装脚本，自动装依赖并写好环境变量</li><li>邮箱注册即可，没有 GitHub 账号年龄门槛，也没有人机校验</li></ul>
+        <p class="desc">Base URL 与 API Key 登录后才由后台下发，本页不做猜测；控制台「使用教程」里选 Codex 就能复制对应平台的一键安装脚本。</p><ol class="hl"><li>从本页邀请链接注册并登录 → 控制台「当前套餐」点一次『领取 Codex 权益』</li><li>打开「使用教程」→ 选择 Codex → 复制对应平台（macOS / Linux / Windows）的安装脚本</li><li>在终端执行脚本，它会装好依赖并写入 Base URL / Key 等环境变量，重开终端后直接跑 codex</li></ol>
+        <div class="mt-auto"></div>
+        <a class="btn btn-primary" href="https://new.sharedchat.cc/list/#/register?i=MaVP1" target="_blank" rel="noopener">免费注册 RawChat 公益站 →</a>
+        
+      </article>
+      <article class="card">
+        <h3><span class="dot up" title="在线"></span>Matrix</h3>
+        <p class="desc">统一 API 网关 + 开源应用商店 · 邀请注册送 600 积分，实名再送 2000</p>
+        <div class="tags"><span class="tag">积分制</span><span class="tag">免费额度</span><span class="tag">OpenAI 兼容</span><span class="tag">开源应用商店</span><span class="tag">Cursor</span></div>
+        <dl class="kv"><dt>首日可得</dt><dd><b>600 积分</b></dd><dt>可用模型</dt><dd>登录后台查看</dd><dt>接口延迟</dt><dd>1341 ms</dd></dl>
+        <ul class="hl"><li>从本页邀请链接注册即得 600 获赠积分，注册就发、不用实名、不用充值</li><li>完成个人实名认证再领 2,000 积分，是这个站拿额度最快的一步</li><li>一把 Key 调通 OpenAI / Anthropic / Google / DeepSeek / Moonshot / 智谱 / 阿里 等多家模型，OpenAI 兼容协议直连 Cursor / Cherry Studio / Open WebUI / Aider</li></ul>
+        <p class="desc">官方文档把网关地址写成占位符「&lt;Matrix 网关地址&gt;/v1」，并注明当前地址只显示在登录后的 API Key 详情页，本页不做猜测。</p><ol class="hl"><li>从本页邀请链接注册并登录（杭电统一身份认证 / 手机验证码 / 邮箱 + 密码 任选一种）</li><li>进入控制台「API Key」新建一把 Key：Token 以 mat- 开头且只显示一次，复制好；同一页面能看到当前网关地址</li><li>客户端里填 Base URL = 网关地址 + /v1、API Key = 刚复制的 mat- Key，模型名到控制台「模型列表」页确认</li></ol>
+        <div class="mt-auto"></div>
+        <a class="btn btn-primary" href="https://matrix.mzsjai.com/login?redirect=%2Fapp%2Fgrowth%3FinviteCode%3DMX0OTR-_H8HM" target="_blank" rel="noopener">免费注册 Matrix →</a>
+        
+      </article>
+      <article class="card">
+        <h3><span class="dot up" title="在线"></span>TaBiAI</h3>
+        <p class="desc">New API 中转站 · 注册送 $100，本页邀请码再加 $20，专供 Claude Opus</p>
+        <div class="tags"><span class="tag">New API</span><span class="tag">免费额度</span><span class="tag">Claude Code</span><span class="tag">Anthropic 兼容</span><span class="tag">按次计费</span></div>
+        <dl class="kv"><dt>首日可得</dt><dd><b>$120</b><small> 注册 $100 + 本页邀请 $20</small></dd><dt>每日签到</dt><dd>支持</dd><dt>登录方式</dt><dd>GitHub / 账号密码</dd><dt>可用模型</dt><dd>claude-opus-4-8、claude-opus-4-8-thinking、claude-opus-5、claude-opus-5-thinking</dd><dt>接口延迟</dt><dd>174 ms</dd></dl>
+        <ul class="hl"><li>新用户注册送 $100，从本页邀请链接进入再加 $20，首日 $120（2026-08-30 实测到账）</li><li>Anthropic 与 OpenAI 两种协议都开着，Claude Code 填个 Base URL 就能直连</li><li>只放 Claude Opus 四个型号（opus-5 / opus-5-thinking / opus-4-8 / 4-8-thinking），定价接口公开可查</li></ul>
+        <pre><code>export ANTHROPIC_BASE_URL=https://tabitoken.com
+export ANTHROPIC_AUTH_TOKEN=你的 API Key
+export ANTHROPIC_MODEL=claude-opus-5
+claude</code></pre>
+        <button class="copy" type="button">复制配置</button>
+        <div class="mt-auto"></div>
+        <a class="btn btn-primary" href="https://tabitoken.com/sign-up?aff=EQIT" target="_blank" rel="noopener">免费注册 TaBiAI →</a>
+        
+      </article>
+      <article class="card">
+        <h3><span class="dot up" title="在线"></span>GoRouter</h3>
+        <p class="desc">New API 中转站 · 注册送 $50，本页邀请码再加 $20，按次计费里最便宜的一档</p>
+        <div class="tags"><span class="tag">New API</span><span class="tag">免费额度</span><span class="tag">Claude Code</span><span class="tag">Anthropic 兼容</span><span class="tag">按次计费</span></div>
+        <dl class="kv"><dt>首日可得</dt><dd><b>$70</b><small> 注册 $50 + 本页邀请 $20</small></dd><dt>每日签到</dt><dd>支持</dd><dt>登录方式</dt><dd>GitHub / 账号密码</dd><dt>可用模型</dt><dd>claude-opus-4-8、claude-opus-4-8-thinking、claude-opus-5、claude-opus-5-thinking</dd><dt>接口延迟</dt><dd>32 ms</dd></dl>
+        <ul class="hl"><li>新用户注册送 $50，从本页邀请链接进入再加 $20，首日 $70（2026-08-11 实测到账）</li><li>按次计费里单价最低的一档：claude-opus-5 每次 $0.3，opus-4-8 每次 $0.2，首日 $70 够跑两百多次</li><li>Anthropic 与 OpenAI 两种协议都开着，Claude Code 填个 Base URL 就能直连</li></ul>
+        <pre><code>export ANTHROPIC_BASE_URL=https://gorouter.app
+export ANTHROPIC_AUTH_TOKEN=你的 API Key
+export ANTHROPIC_MODEL=claude-opus-5
+claude</code></pre>
+        <button class="copy" type="button">复制配置</button>
+        <div class="mt-auto"></div>
+        <a class="btn btn-primary" href="https://gorouter.app/sign-up?aff=PZDx" target="_blank" rel="noopener">免费注册 GoRouter →</a>
+        
+      </article>
+    </div>
+  </section>
+
+    <section id="models">
+      <h2>可用模型与价格</h2>
+      <p class="hint">抓取自各站点公开的定价接口；标「按次」的模型按请求次数计费，与 tokens 无关，其余倍率 1 ≈ $2 / 1M tokens，一切以站内实时公示为准。</p>
+      <div class="table-wrap">
+      <table>
+        <thead><tr><th>站点</th><th>模型</th><th>倍率</th><th>输入 /1M</th><th>输出 /1M</th><th>协议</th></tr></thead>
+        <tbody><tr><td>AgentRouter</td><td><code>claude-opus-4-8</code></td><td>4</td><td>$8</td><td>$40</td><td>anthropic / openai</td></tr><tr><td>AgentRouter</td><td><code>claude-opus-5</code></td><td>4</td><td>$8</td><td>$40</td><td>anthropic / openai</td></tr><tr><td>AgentRouter</td><td><code>deepseek-v4-flash</code></td><td>1</td><td>$2</td><td>$6</td><td>openai / anthropic</td></tr><tr><td>AgentRouter</td><td><code>glm-5.3</code></td><td>1.5</td><td>$3</td><td>$12</td><td>anthropic / openai</td></tr><tr><td>AgentRouter</td><td><code>gpt-5.6-sol</code></td><td>1.5</td><td>$3</td><td>$15</td><td>openai</td></tr><tr><td>TaBiAI</td><td><code>claude-opus-4-8</code></td><td>按次</td><td><b>$0.5 / 次</b></td><td>—</td><td>anthropic / openai</td></tr><tr><td>TaBiAI</td><td><code>claude-opus-4-8-thinking</code></td><td>按次</td><td><b>$0.5 / 次</b></td><td>—</td><td>anthropic / openai</td></tr><tr><td>TaBiAI</td><td><code>claude-opus-5</code></td><td>按次</td><td><b>$0.8 / 次</b></td><td>—</td><td>anthropic / openai</td></tr><tr><td>TaBiAI</td><td><code>claude-opus-5-thinking</code></td><td>按次</td><td><b>$0.8 / 次</b></td><td>—</td><td>anthropic / openai</td></tr><tr><td>GoRouter</td><td><code>claude-opus-4-8</code></td><td>按次</td><td><b>$0.2 / 次</b></td><td>—</td><td>anthropic / openai</td></tr><tr><td>GoRouter</td><td><code>claude-opus-4-8-thinking</code></td><td>按次</td><td><b>$0.2 / 次</b></td><td>—</td><td>anthropic / openai</td></tr><tr><td>GoRouter</td><td><code>claude-opus-5</code></td><td>按次</td><td><b>$0.3 / 次</b></td><td>—</td><td>anthropic / openai</td></tr><tr><td>GoRouter</td><td><code>claude-opus-5-thinking</code></td><td>按次</td><td><b>$0.3 / 次</b></td><td>—</td><td>anthropic / openai</td></tr></tbody>
+      </table>
+      </div>
+    </section>
+  <section id="faq">
+    <h2>常见问题</h2>
+    <p class="hint">踩坑集中在这四个。</p>
+    <details><summary>注册完看不到额度？</summary><p>公益站额度多在登录时结算，退出后重新登录一次通常就到账；余额短暂显示 $0 属于展示问题，稍后刷新即可。</p></details>
+    <details><summary>Claude Code 报 401？</summary><p>Anthropic 协议的 Base URL 不要带 /v1；再确认 Key 完整、模型名在站内可用清单里、客户端属于该站支持的类型。</p></details>
+    <details><summary>返回 400 content blocked？</summary><p>部分站点只放行中 / 英 / 法 / 德 / 俄，提示词混入其它语言会被上游拦截。</p></details>
+    <details><summary>会不会顶掉我的 Claude 订阅登录？</summary><p>会。环境变量优先级更高，想切回订阅登录就 unset ANTHROPIC_BASE_URL / ANTHROPIC_AUTH_TOKEN / ANTHROPIC_MODEL 后重开终端。</p></details>
+  </section>
+
+  <footer>
+    <ul>
+      <li>本页注册链接为<strong>邀请链接</strong>，通过它注册双方都会获得站点发放的额度，不影响你的注册流程。</li>
+      <li>本站只做信息聚合，与各站点无隶属关系，不代收费用、不承诺可用性；公益站可能随时改规则或关站。</li>
+      <li>请勿把生产密钥、隐私数据、企业代码交给来源不明的中转服务；重要项目请使用官方 API。</li>
+      <li>请遵守各站点与上游服务商条款，禁止批量注册、刷量、转售额度。</li>
+    </ul>
+    <p>数据快照时间：2026-08-31 22:52 UTC · 由 <a href="https://github.com/panxunying/ai-coding-welfare">github.com/panxunying/ai-coding-welfare</a> 自动生成</p>
+  </footer>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var pre = btn.previousElementSibling;
+    navigator.clipboard.writeText(pre.innerText).then(function () {
+      btn.textContent = '已复制 ✓';
+      setTimeout(function () { btn.textContent = '复制配置'; }, 1800);
+    });
+  });
+});
+</script>
+</body>
+</html>
