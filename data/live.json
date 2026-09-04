@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-04T16:26:44.888Z",
+  "generatedAt": "2026-09-04T20:49:10.359Z",
   "sites": [
     {
       "id": "agentrouter",
-      "checkedAt": "2026-09-04T16:26:38.683Z",
+      "checkedAt": "2026-09-04T20:49:04.116Z",
       "online": true,
       "latencyMs": 305,
       "error": "invalid json",
@@ -147,7 +147,7 @@
       "signup": {
         "status": 200,
         "ok": true,
-        "ms": 1339,
+        "ms": 1297,
         "attempts": 1
       },
       "mirrors": [
@@ -177,9 +177,9 @@
     },
     {
       "id": "justdowork",
-      "checkedAt": "2026-09-04T16:26:32.712Z",
+      "checkedAt": "2026-09-04T20:48:58.120Z",
       "online": true,
-      "latencyMs": 326,
+      "latencyMs": 576,
       "error": null,
       "systemName": "JustDoWork",
       "version": "v1.0.0-rc.23",
@@ -205,7 +205,7 @@
       "signup": {
         "status": 200,
         "ok": true,
-        "ms": 564,
+        "ms": 1350,
         "attempts": 1
       },
       "mirrors": [],
@@ -219,10 +219,10 @@
     },
     {
       "id": "tabitoken",
-      "checkedAt": "2026-09-04T16:26:34.483Z",
+      "checkedAt": "2026-09-04T20:49:00.229Z",
       "apiOk": true,
       "pricingOk": true,
-      "latencyMs": 206,
+      "latencyMs": 596,
       "error": null,
       "systemName": "TaBiAI",
       "version": "init-20260817-f880a343",
@@ -245,7 +245,7 @@
           "name": "claude-opus-5",
           "ratio": 0,
           "completionRatio": 0,
-          "fixedPrice": 0.8,
+          "fixedPrice": 0.35,
           "inputPerMTok": null,
           "outputPerMTok": null,
           "groups": [
@@ -260,7 +260,7 @@
           "name": "claude-opus-5-thinking",
           "ratio": 0,
           "completionRatio": 0,
-          "fixedPrice": 0.8,
+          "fixedPrice": 0.4,
           "inputPerMTok": null,
           "outputPerMTok": null,
           "groups": [
@@ -280,7 +280,7 @@
       "signup": {
         "status": 403,
         "ok": false,
-        "ms": 387,
+        "ms": 576,
         "attempts": 1
       },
       "mirrors": [],
