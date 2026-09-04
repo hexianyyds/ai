@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-04T11:25:03.000Z",
+  "generatedAt": "2026-09-04T16:26:44.888Z",
   "sites": [
     {
       "id": "agentrouter",
-      "checkedAt": "2026-09-04T11:24:56.641Z",
+      "checkedAt": "2026-09-04T16:26:38.683Z",
       "online": true,
-      "latencyMs": 310,
+      "latencyMs": 305,
       "error": "invalid json",
       "systemName": "Agent Router",
       "version": "init-20260828-37a398bd",
@@ -147,7 +147,7 @@
       "signup": {
         "status": 200,
         "ok": true,
-        "ms": 1567,
+        "ms": 1339,
         "attempts": 1
       },
       "mirrors": [
@@ -177,9 +177,9 @@
     },
     {
       "id": "justdowork",
-      "checkedAt": "2026-09-04T11:24:50.870Z",
+      "checkedAt": "2026-09-04T16:26:32.712Z",
       "online": true,
-      "latencyMs": 574,
+      "latencyMs": 326,
       "error": null,
       "systemName": "JustDoWork",
       "version": "v1.0.0-rc.23",
@@ -205,7 +205,7 @@
       "signup": {
         "status": 200,
         "ok": true,
-        "ms": 776,
+        "ms": 564,
         "attempts": 1
       },
       "mirrors": [],
@@ -219,10 +219,10 @@
     },
     {
       "id": "tabitoken",
-      "checkedAt": "2026-09-04T11:24:53.058Z",
+      "checkedAt": "2026-09-04T16:26:34.483Z",
       "apiOk": true,
       "pricingOk": true,
-      "latencyMs": 172,
+      "latencyMs": 206,
       "error": null,
       "systemName": "TaBiAI",
       "version": "init-20260817-f880a343",
@@ -249,8 +249,7 @@
           "inputPerMTok": null,
           "outputPerMTok": null,
           "groups": [
-            "default",
-            "vip"
+            "default"
           ],
           "protocols": [
             "anthropic",
@@ -265,8 +264,7 @@
           "inputPerMTok": null,
           "outputPerMTok": null,
           "groups": [
-            "default",
-            "vip"
+            "default"
           ],
           "protocols": [
             "anthropic",
@@ -282,7 +280,7 @@
       "signup": {
         "status": 403,
         "ok": false,
-        "ms": 603,
+        "ms": 387,
         "attempts": 1
       },
       "mirrors": [],
