@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-04T20:49:10.359Z",
+  "generatedAt": "2026-09-05T04:37:01.618Z",
   "sites": [
     {
       "id": "agentrouter",
-      "checkedAt": "2026-09-04T20:49:04.116Z",
+      "checkedAt": "2026-09-05T04:36:55.750Z",
       "online": true,
-      "latencyMs": 305,
+      "latencyMs": 239,
       "error": "invalid json",
       "systemName": "Agent Router",
       "version": "init-20260828-37a398bd",
@@ -147,7 +147,7 @@
       "signup": {
         "status": 200,
         "ok": true,
-        "ms": 1297,
+        "ms": 1190,
         "attempts": 1
       },
       "mirrors": [
@@ -177,9 +177,9 @@
     },
     {
       "id": "justdowork",
-      "checkedAt": "2026-09-04T20:48:58.120Z",
+      "checkedAt": "2026-09-05T04:36:50.172Z",
       "online": true,
-      "latencyMs": 576,
+      "latencyMs": 540,
       "error": null,
       "systemName": "JustDoWork",
       "version": "v1.0.0-rc.23",
@@ -205,7 +205,7 @@
       "signup": {
         "status": 200,
         "ok": true,
-        "ms": 1350,
+        "ms": 720,
         "attempts": 1
       },
       "mirrors": [],
@@ -219,10 +219,10 @@
     },
     {
       "id": "tabitoken",
-      "checkedAt": "2026-09-04T20:49:00.229Z",
+      "checkedAt": "2026-09-05T04:36:52.157Z",
       "apiOk": true,
       "pricingOk": true,
-      "latencyMs": 596,
+      "latencyMs": 480,
       "error": null,
       "systemName": "TaBiAI",
       "version": "init-20260817-f880a343",
@@ -242,6 +242,38 @@
       "announcements": [],
       "models": [
         {
+          "name": "claude-opus-4-8",
+          "ratio": 0,
+          "completionRatio": 0,
+          "fixedPrice": 0.5,
+          "inputPerMTok": null,
+          "outputPerMTok": null,
+          "groups": [
+            "default",
+            "vip"
+          ],
+          "protocols": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "name": "claude-opus-4-8-thinking",
+          "ratio": 0,
+          "completionRatio": 0,
+          "fixedPrice": 0.5,
+          "inputPerMTok": null,
+          "outputPerMTok": null,
+          "groups": [
+            "vip",
+            "default"
+          ],
+          "protocols": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
           "name": "claude-opus-5",
           "ratio": 0,
           "completionRatio": 0,
@@ -249,6 +281,7 @@
           "inputPerMTok": null,
           "outputPerMTok": null,
           "groups": [
+            "vip",
             "default"
           ],
           "protocols": [
@@ -264,6 +297,7 @@
           "inputPerMTok": null,
           "outputPerMTok": null,
           "groups": [
+            "vip",
             "default"
           ],
           "protocols": [
@@ -280,7 +314,7 @@
       "signup": {
         "status": 403,
         "ok": false,
-        "ms": 576,
+        "ms": 547,
         "attempts": 1
       },
       "mirrors": [],
