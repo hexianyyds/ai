@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-05T20:26:39.675Z",
+  "generatedAt": "2026-09-06T04:46:07.979Z",
   "sites": [
     {
       "id": "agentrouter",
-      "checkedAt": "2026-09-05T20:26:33.332Z",
+      "checkedAt": "2026-09-06T04:46:02.264Z",
       "online": true,
-      "latencyMs": 319,
+      "latencyMs": 230,
       "error": "invalid json",
       "systemName": "Agent Router",
       "version": "init-20260828-37a398bd",
@@ -147,7 +147,7 @@
       "signup": {
         "status": 200,
         "ok": true,
-        "ms": 1448,
+        "ms": 992,
         "attempts": 1
       },
       "mirrors": [
@@ -177,9 +177,9 @@
     },
     {
       "id": "justdowork",
-      "checkedAt": "2026-09-05T20:26:27.372Z",
+      "checkedAt": "2026-09-06T04:45:56.695Z",
       "online": true,
-      "latencyMs": 586,
+      "latencyMs": 380,
       "error": null,
       "systemName": "JustDoWork",
       "version": "v1.0.0-rc.23",
@@ -205,7 +205,7 @@
       "signup": {
         "status": 200,
         "ok": true,
-        "ms": 1351,
+        "ms": 530,
         "attempts": 1
       },
       "mirrors": [],
@@ -219,10 +219,10 @@
     },
     {
       "id": "tabitoken",
-      "checkedAt": "2026-09-05T20:26:29.180Z",
+      "checkedAt": "2026-09-06T04:45:58.337Z",
       "apiOk": true,
       "pricingOk": true,
-      "latencyMs": 199,
+      "latencyMs": 138,
       "error": null,
       "systemName": "TaBiAI",
       "version": "init-20260817-f880a343",
@@ -306,7 +306,7 @@
           ]
         }
       ],
-      "modelsSource": "public-api",
+      "modelsSource": "cached",
       "defaults": {
         "claude": "claude-opus-5",
         "openai": "claude-opus-5"
@@ -314,15 +314,18 @@
       "signup": {
         "status": 403,
         "ok": false,
-        "ms": 687,
+        "ms": 385,
         "attempts": 1
       },
       "mirrors": [],
       "probeBlocked": false,
       "online": true,
-      "dataStale": false,
-      "staleFrom": null,
-      "staleFields": []
+      "dataStale": true,
+      "staleFrom": "2026-09-05T20:26:29.180Z",
+      "staleFields": [
+        "models",
+        "defaults"
+      ]
     }
   ]
 }
