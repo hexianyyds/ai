@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-15T21:26:07.191Z",
+  "generatedAt": "2026-09-16T04:55:10.533Z",
   "sites": [
     {
       "id": "agentrouter",
-      "checkedAt": "2026-09-15T21:26:00.857Z",
+      "checkedAt": "2026-09-16T04:55:04.194Z",
       "online": true,
-      "latencyMs": 311,
+      "latencyMs": 322,
       "error": "invalid json",
       "systemName": "Agent Router",
       "version": "init-20260828-37a398bd",
@@ -147,7 +147,7 @@
       "signup": {
         "status": 200,
         "ok": true,
-        "ms": 1431,
+        "ms": 1671,
         "attempts": 1
       },
       "mirrors": [
@@ -177,9 +177,9 @@
     },
     {
       "id": "justdowork",
-      "checkedAt": "2026-09-15T21:25:54.925Z",
+      "checkedAt": "2026-09-16T04:54:59.126Z",
       "online": true,
-      "latencyMs": 582,
+      "latencyMs": 1736,
       "error": null,
       "systemName": "JustDoWork",
       "version": "v1.0.0-rc.23",
@@ -205,7 +205,7 @@
       "signup": {
         "status": 200,
         "ok": true,
-        "ms": 1512,
+        "ms": 1708,
         "attempts": 1
       },
       "mirrors": [],
@@ -219,10 +219,10 @@
     },
     {
       "id": "tabitoken",
-      "checkedAt": "2026-09-15T21:25:57.255Z",
+      "checkedAt": "2026-09-16T04:55:00.644Z",
       "apiOk": true,
       "pricingOk": true,
-      "latencyMs": 232,
+      "latencyMs": 710,
       "error": null,
       "systemName": "TaBiAI",
       "version": "init-20260817-f880a343",
@@ -314,7 +314,7 @@
       "signup": {
         "status": 403,
         "ok": false,
-        "ms": 692,
+        "ms": 1009,
         "attempts": 1
       },
       "mirrors": [],
