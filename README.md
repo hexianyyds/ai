@@ -4,9 +4,9 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/%E6%94%B6%E5%BD%95%E7%AB%99%E7%82%B9-3%20%E4%B8%AA-blue" alt="收录站点">
-  <img src="https://img.shields.io/badge/%E5%9C%A8%E7%BA%BF-3%2F3-brightgreen" alt="在线">
+  <img src="https://img.shields.io/badge/%E5%9C%A8%E7%BA%BF-2%2F3-orange" alt="在线">
   <img src="https://img.shields.io/badge/%E9%A6%96%E6%97%A5%E5%8F%AF%E5%BE%97-%E6%9C%80%E9%AB%98%20%24175-success" alt="首日可得">
-  <img src="https://img.shields.io/badge/%E6%95%B0%E6%8D%AE%E6%9B%B4%E6%96%B0-2026--09--20%2011.31%20UTC-informational" alt="数据更新">
+  <img src="https://img.shields.io/badge/%E6%95%B0%E6%8D%AE%E6%9B%B4%E6%96%B0-2026--09--20%2016.12%20UTC-informational" alt="数据更新">
 </p>
 
 <p align="center">
@@ -23,9 +23,9 @@
 | :-- | :--: | :--: | :-- | :--: | :--: | :--: | :--: |
 | **AgentRouter** 🔥 | 🟢 在线 | **$175** | 注册 $100 + 本页邀请 $50 + 首签 $25 | $25/天 | Anthropic + OpenAI | 5 个可查 | [点此注册 →](https://agentrouter.org/register?aff=RDd8) |
 | **JustDoWork** | 🟢 在线 | **≈$92** | 注册 $70 + 首签 ≈$22 | ≈$22/天 | Anthropic + OpenAI | 需登录查看 | [点此注册 →](https://api.justwoker.icu/register?aff=dpBa) |
-| **TaBiAI** | 🟢 在线 | **$120** | 注册 $100 + 本页邀请 $20 | 支持签到 | Anthropic + OpenAI | 4 个可查 | [点此注册 →](https://tabitoken.com/sign-up?aff=vO0r) |
+| **TaBiAI** | 🔴 异常 | **$120** | 注册 $100 + 本页邀请 $20 | 支持签到 | Anthropic + OpenAI | 4 个可查 | [点此注册 →](https://tabitoken.com/sign-up?aff=vO0r) |
 
-> 「首日可得」= 注册基础额度 + 本页邀请链接额度 + 当天能领的签到额度（每日重置额度池的站点按一天的池子算）；模型、价格、在线状态由脚本抓取站点公开接口自动生成，最后更新：`2026-09-20 11:31 UTC`。
+> 「首日可得」= 注册基础额度 + 本页邀请链接额度 + 当天能领的签到额度（每日重置额度池的站点按一天的池子算）；模型、价格、在线状态由脚本抓取站点公开接口自动生成，最后更新：`2026-09-20 16:12 UTC`。
 >
 > 3 个站全注册一遍，第一天手上大约有 **$387** 额度可用。
 >
@@ -72,12 +72,12 @@ powershell -ExecutionPolicy Bypass -File scripts/quickstart.ps1
 
 **实时数据**（自动抓取站点公开接口）
 
-- ⚠ 接口已连续 505 小时没抓到新数据，下列信息为 `2026-08-30 10:21 UTC` 的快照
+- ⚠ 接口已连续 510 小时没抓到新数据，下列信息为 `2026-08-30 10:21 UTC` 的快照
 - 站点名称：**Agent Router**
 - 面板版本：`init-20260828-37a398bd`
 - 邀请他人可得：**$50**
 - 登录方式：GitHub / LinuxDO
-- 接口延迟：250 ms
+- 接口延迟：303 ms
 
 **镜像 / 备用入口**
 
@@ -217,7 +217,7 @@ curl -s https://agentrouter.org/v1/chat/completions \
 - 开放注册：✅
 - 登录方式：GitHub / 账号密码
 - GitHub 账号需满 **365 天**
-- 接口延迟：522 ms
+- 接口延迟：702 ms
 
 > 该站模型清单需登录后台查看，注册后在「模型价格」页确认。
 
@@ -301,7 +301,7 @@ curl -s https://api.justwoker.icu/v1/chat/completions \
 
 ---
 
-### 🟢 TaBiAI
+### 🔴 TaBiAI
 
 > New API 中转站 · 注册送 $100，本页邀请码再加 $20，专供 Claude Opus
 
@@ -322,13 +322,13 @@ curl -s https://api.justwoker.icu/v1/chat/completions \
 
 **实时数据**（自动抓取站点公开接口）
 
-- ⚠ 接口已连续 351 小时没抓到新数据，下列信息为 `2026-09-05 20:26 UTC` 的快照
+- ⚠ 接口已连续 356 小时没抓到新数据，下列信息为 `2026-09-05 20:26 UTC` 的快照
 - 站点名称：**TaBiAI**
 - 面板版本：`init-20260817-f880a343`
 - 每日签到：✅
 - 开放注册：✅
 - 登录方式：GitHub / 账号密码
-- 接口延迟：409 ms
+- 接口延迟：19453 ms
 
 **当前可用模型**
 

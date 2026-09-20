@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-20T11:31:38.610Z",
+  "generatedAt": "2026-09-20T16:12:54.758Z",
   "sites": [
     {
       "id": "agentrouter",
-      "checkedAt": "2026-09-20T11:31:32.748Z",
+      "checkedAt": "2026-09-20T16:12:16.807Z",
       "online": true,
-      "latencyMs": 250,
+      "latencyMs": 303,
       "error": "invalid json",
       "systemName": "Agent Router",
       "version": "init-20260828-37a398bd",
@@ -147,7 +147,7 @@
       "signup": {
         "status": 200,
         "ok": true,
-        "ms": 1192,
+        "ms": 1459,
         "attempts": 1
       },
       "mirrors": [
@@ -177,9 +177,9 @@
     },
     {
       "id": "justdowork",
-      "checkedAt": "2026-09-20T11:31:27.092Z",
+      "checkedAt": "2026-09-20T16:12:10.974Z",
       "online": true,
-      "latencyMs": 522,
+      "latencyMs": 702,
       "error": null,
       "systemName": "JustDoWork",
       "version": "v1.0.0-rc.23",
@@ -205,7 +205,7 @@
       "signup": {
         "status": 200,
         "ok": true,
-        "ms": 648,
+        "ms": 889,
         "attempts": 1
       },
       "mirrors": [],
@@ -219,11 +219,11 @@
     },
     {
       "id": "tabitoken",
-      "checkedAt": "2026-09-20T11:31:29.060Z",
-      "apiOk": true,
-      "pricingOk": true,
-      "latencyMs": 409,
-      "error": null,
+      "checkedAt": "2026-09-20T16:12:54.750Z",
+      "apiOk": false,
+      "pricingOk": false,
+      "latencyMs": 19453,
+      "error": "HTTP 522",
       "systemName": "TaBiAI",
       "version": "init-20260817-f880a343",
       "registerOpen": true,
@@ -314,15 +314,22 @@
       "signup": {
         "status": 403,
         "ok": false,
-        "ms": 569,
+        "ms": 778,
         "attempts": 1
       },
       "mirrors": [],
       "probeBlocked": false,
-      "online": true,
+      "online": false,
       "dataStale": true,
       "staleFrom": "2026-09-05T20:26:29.180Z",
       "staleFields": [
+        "systemName",
+        "version",
+        "registerOpen",
+        "passwordRegister",
+        "checkinEnabled",
+        "loginMethods",
+        "quotaPerUnit",
         "models",
         "defaults"
       ]
