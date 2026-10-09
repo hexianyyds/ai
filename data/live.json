@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-08T23:24:51.324Z",
+  "generatedAt": "2026-10-09T06:16:28.706Z",
   "sites": [
     {
       "id": "agentrouter",
-      "checkedAt": "2026-10-08T23:24:45.385Z",
+      "checkedAt": "2026-10-09T06:16:22.775Z",
       "online": true,
       "latencyMs": 244,
       "error": "invalid json",
@@ -147,7 +147,7 @@
       "signup": {
         "status": 200,
         "ok": true,
-        "ms": 1254,
+        "ms": 2945,
         "attempts": 1
       },
       "mirrors": [
@@ -177,9 +177,9 @@
     },
     {
       "id": "justdowork",
-      "checkedAt": "2026-10-08T23:24:39.965Z",
+      "checkedAt": "2026-10-09T06:16:17.166Z",
       "online": true,
-      "latencyMs": 785,
+      "latencyMs": 2306,
       "error": null,
       "systemName": "JustDoWork",
       "version": "v1.0.0-rc.23",
@@ -205,7 +205,7 @@
       "signup": {
         "status": 200,
         "ok": true,
-        "ms": 938,
+        "ms": 2438,
         "attempts": 1
       },
       "mirrors": [],
@@ -219,7 +219,7 @@
     },
     {
       "id": "tabitoken",
-      "checkedAt": "2026-10-08T23:24:44.823Z",
+      "checkedAt": "2026-10-09T06:16:22.143Z",
       "apiOk": false,
       "pricingOk": false,
       "latencyMs": 133,
@@ -314,7 +314,7 @@
       "signup": {
         "status": 403,
         "ok": false,
-        "ms": 829,
+        "ms": 2428,
         "attempts": 1
       },
       "mirrors": [],
